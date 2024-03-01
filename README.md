@@ -12,3 +12,36 @@ Enter the number
 6
 Total 3 numbers are valid numbers. 
 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int valid_count = 0;
+    int number;
+    char choice;
+
+    do {
+        cout << "Enter the number: ";
+        cin >> number;
+
+        if (number % 8 == 0) {
+            valid_count++;
+        } else {
+            cout << "Invalid number. Please enter a number divisible by 8." << endl;
+        }
+
+        cout << "Do you want to enter another number? (yes/no): ";
+        cin >> choice;
+    } while (choice == 'y' || choice == 'Y');
+
+    cout << "Total " << valid_count << " numbers are valid numbers." << endl;
+
+    return 0;
+}
+In this program, a do-while loop is used to repeatedly ask the user for input until they decide to stop. Inside the loop, the user is prompted to enter a number. If the number is divisible by 8, the valid_count variable is incremented. If not, an error message is displayed. After each iteration, the user is asked if they want to enter another number. The loop continues as long as the user inputs 'y' or 'Y'. Finally, the program prints the total count of valid numbers entered by the user.
+
+
+
+
+
