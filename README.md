@@ -23,8 +23,7 @@ class num{
 			while(num%8==0){
 				valid++;
 				cout<<"Enter the number "<<endl;
-				cin>>num;
-			}
+				cin>>num;	}
 			cout<<"\nTotal "<<valid<<"numbers are valid numbers.";
 		}
 };
